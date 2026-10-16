@@ -1,0 +1,16 @@
+[Unit]
+Description=pi-sip-gateway web app
+After=network-online.target asterisk.service
+Wants=network-online.target asterisk.service
+
+[Service]
+Type=simple
+User=root
+EnvironmentFile=/etc/pi-sip-gateway/env
+WorkingDirectory=/opt/pi-sip-gateway
+ExecStart=/opt/pi-sip-gateway/.venv/bin/python -m gateway.main
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

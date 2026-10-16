@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pi-sip-gateway</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/gh/versatica/JsSIP@3.10.1/dist/jssip.min.js" defer></script>
+<script src="/static/app.js" defer></script>
+</head>
+<body>
+<div id="auth" class="auth hidden"></div>
+<div id="shell" class="shell hidden">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>pi-sip-gateway</span>
+      <button class="menu-btn btn ghost small" id="menuBtn" data-act="menu" aria-label="Menu">Menu</button>
+    </div>
+    <nav id="nav" class="nav"></nav>
+    <div class="side-foot">
+      <span id="mockBadge" class="badge warn hidden">MOCK MODE – no Asterisk</span>
+      <span id="statusPill" class="pill"><i class="dot amber"></i><span>Asterisk …</span></span>
+      <button class="btn ghost small" data-act="logout">Log out</button>
+    </div>
+  </aside>
+  <main id="main" class="main"></main>
+</div>
+<div id="modalRoot"></div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>
