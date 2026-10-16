@@ -183,3 +183,11 @@ docs/API.md           HTTP API contract
 | Browser softphone says "no media devices" | The page must be HTTPS. Use the 8443 URL or the Cloudflare hostname. |
 | Inbound calls hang up immediately | No extensions registered. Dashboard shows registration state. |
 | Bluetooth phone never `Connected` | `bluetoothctl info <addr>` shows Paired and Trusted? Phone's Bluetooth on? Unpair from other headsets. |
+
+---
+
+## ⭐ Support
+
+Please give stars and if possible Buy me a coffee (USDT-TRC20) - `TA216k3WgWTrKnUKxZrSDNGzSJj3eHtEcH`
+
+Telegram: [@Cyberkyd](https://t.me/Cyberkyd)
